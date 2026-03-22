@@ -1,0 +1,166 @@
+/* 🌐 Global */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #eef2f3, #dfe9f3);
+}
+
+/* 🏥 Header */
+h1 {
+  text-align: center;
+  color: #1f3c88;
+  margin-top: 20px;
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+
+/* 🧾 Input Section */
+input {
+  padding: 12px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 220px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #1f3c88;
+  box-shadow: 0 0 5px rgba(31, 60, 136, 0.3);
+}
+
+/* 🚀 Buttons */
+button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  background-color: #e84150;
+  color:#f5f7fa;
+  margin: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* Analyze Button */
+button:nth-child(3) {
+  background: #ff4b5c;
+  color: white;
+}
+
+button:nth-child(3):hover {
+  background: #e84150;
+  transform: scale(1.05);
+}
+
+/* 🎤 Mic Button */
+button:nth-child(2) {
+  background: #1f3c88;
+  color: white;
+}
+
+button:nth-child(2):hover {
+  background: #162d63;
+  transform: scale(1.05);
+}
+
+/* 📊 Dashboard Title */
+h2 {
+  margin-left: 20px;
+  color: #333;
+}
+
+/* 📋 Table */
+table {
+  width: 95%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Header */
+th {
+  background: linear-gradient(90deg, #1f3c88, #3a5bbf);
+  color: white;
+  padding: 15px;
+  font-size: 16px;
+}
+
+/* Table Rows */
+td {
+  padding: 15px;
+  text-align: center;
+  font-size: 15px;
+}
+
+/* Row Hover Effect */
+tr:hover {
+  background: #f5f7fa;
+  transition: 0.3s;
+}
+
+/* 🟡 Priority Colors */
+td:nth-child(3) {
+  font-weight: bold;
+}
+
+td:nth-child(3):contains("HIGH") {
+  color: red;
+}
+
+td:nth-child(3):contains("MEDIUM") {
+  color: orange;
+}
+
+td:nth-child(3):contains("LOW") {
+  color: green;
+}
+
+/* ⚡ Latency */
+td:last-child {
+  font-weight: bold;
+  color: #1f3c88;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  input {
+    width: 90%;
+  }
+
+  table {
+    font-size: 12px;
+  }
+}
+/* 🚨 Priority Badges */
+.badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  animation: pulse 1.5s infinite;
+}
+
+.HIGH {
+  background: red;
+}
+
+.MEDIUM {
+  background: orange;
+}
+
+.LOW {
+  background: green;
+}
+
+/* 🔥 Blinking Effect */
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.6; }
+  100% { opacity: 1; }
+}
